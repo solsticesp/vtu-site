@@ -1,0 +1,134 @@
+.home {
+    display: flex;
+    /* gap: 2rem; */
+    flex-direction: column;
+}
+
+.main-image-container {
+    height: 34rem;
+    border-top: 4px solid rgba(207, 181, 59, 0.4);
+    position: relative;
+}
+
+.main-image-container .single-image-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.main-image-container .single-image-container.visible {
+    opacity: 1;
+    z-index: 100;
+}
+
+.main-image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-image-container .single-image-container .image-headline {
+    position: absolute;
+    bottom: 11rem;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align-last: right;
+    padding: 1rem 2rem;
+    padding-bottom: 1.5rem;
+    border-top: 6px solid  rgba(73, 32, 108, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    cursor: pointer;
+    font-size: larger;
+}
+
+.main-image-container .single-image-container .image-headline h1,
+h3 {
+    opacity: 0.9;
+    margin: 0;
+    white-space: pre-wrap;
+    letter-spacing: 0.5px;
+}
+
+.main-image-container .single-image-container .image-headline h1 {
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+.main-image-container .single-image-container .image-headline h3 {
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.main-content-container {
+    position: relative;
+}
+
+.dot-container {
+    position: absolute;
+    display: flex;
+    height: 2rem;
+    width: 5rem;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    bottom: 1rem;
+    gap: 0.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 200;
+}
+
+.dot-container .single-dot-container {
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+
+.dot-container .single-dot-container .dot {
+    position: relative;
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+.dot-container .single-dot-container .dot.hover {
+    /* height: 1rem;
+    width: 1rem; */
+    animation: dotHover 0.2s linear;
+    animation-fill-mode: forwards;
+}
+
+.dot-container .single-dot-container .dot:hover {
+    cursor: pointer;
+}
+
+.dot-container .single-dot-container .dot.active {
+    /* background-color:  rgb(31, 55, 101); */
+    background-color: #49206c;
+    border: none;
+}
+
+@keyframes dotHover {
+    0% {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+    100% {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+
+
