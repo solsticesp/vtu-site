@@ -1,0 +1,118 @@
+.footer {
+    /* background: rgb(31, 55, 101); */
+    background-color: #49206c;
+    border-top: 4px solid rgba(207, 181, 59, 0.4);
+    height: 25rem;
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .main-content-container {
+    height: 100%;
+}
+
+.footer .footer-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer .footer-container .copyright {
+    padding-top: 1rem;
+    width: 100%;
+    height: fit-content;
+    border-top: 3px solid rgba(255, 255,255, 0.3);
+    text-align: left;
+    color: white;
+    opacity: 0.3;
+}
+
+.footer .footer-container .footer-item-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.footer .footer-container .footer-item-container .footer-menu {
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+.footer .footer-container .footer-item-container .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    padding: 1rem 0;
+    font-size: 1.05rem;
+    color: white;
+}
+
+.footer .footer-container .footer-item-container .menu span {
+    position: relative;
+    width: fit-content;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.footer .footer-container .footer-item-container .menu span:hover {
+    opacity: 1;
+}
+
+.footer .footer-container .footer-item-container .menu span::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: yellow;
+    transition: width .5s;
+}
+
+.footer .footer-container .footer-item-container .menu span:hover:after {
+    width: 100%;
+}
+
+.footer .footer-container .footer-item-container .footer-more {
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+.footer .footer-container .footer-item-container .footer-contacts {
+    flex: 2 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.footer .footer-container .footer-item-container .footer-contacts .address {
+    margin-top: 1rem;
+    color: white;
+    text-align: end;
+    opacity: 0.7;
+}
+
+.footer .footer-container .footer-item-container .footer-contacts img {
+    width: 12rem;
+}
+
+.footer .footer-container .footer-item-container .footer-contacts .socialmedia-icons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.footer .footer-container .footer-item-container .footer-contacts .socialmedia-icons a img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+

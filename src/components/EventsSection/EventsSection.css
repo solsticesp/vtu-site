@@ -1,0 +1,215 @@
+.events-section {
+    position: relative;
+    background-color: #49206c;
+    /* background-color: rgb(0, 30, 66); */
+    height: 49rem;
+}
+
+.events-section .main-content-container {
+    position: relative;
+    height: 100%;
+}
+
+.events-section .section-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.events-section .section-head h1 {
+    font-weight: bold;
+    line-height: 4rem;
+    font-size: 2.2rem;
+    color: #aaa; 
+    opacity: 0.7;
+}
+
+.events-section .section-head .show-all {
+    margin-top: 0.6rem;
+    border: solid 1px rgb(0, 30, 66);
+    background: #aaaa;
+    color: white;
+    opacity: 0.7;
+    width: 7rem;
+    height: 1.6rem;
+}
+
+.events-section .section-head h1:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.events-section .section-head .show-all:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.events-section .events-section-wrapper {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.events-section-container {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    height: 35.5rem;
+    transition: all 0.6s ease 0s;
+    padding-top: 1rem;
+}
+
+.events-section-container.hidden {
+    /* position: absolute; */
+    top: 0;
+    visibility: hidden;
+    /* opacity: 0; */
+    left: 0;
+}
+
+.events-section-container.primary {
+    transform: translateX(0);
+}
+
+.events-section-container.secondary {
+    transform: translateX(0);
+}
+
+.events-section-container.primary.hidden {
+    transform: translateX(-100%);
+}
+
+.events-section-container.secondary.hidden {
+    transform: translateX(100%);
+}
+
+.events-section-container.hidden {
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    /* opacity: 0; */
+    left: 0;
+}
+
+.events-section-container .event-container {
+    height: 100%;
+    width: 18rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    text-align: left;
+    cursor: pointer;
+}
+
+.events-section-container .event-container .image-container {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    font-size: 0;
+}
+
+.events-section-container .event-container .image-container img {
+    width: 100%;
+    height: 12rem;
+}
+
+.events-section-container .event-container .image-container .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.events-section-container .event-container:hover .image-container .image-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 500ms linear;
+}
+
+.events-section-container .event-container .event-text-container {
+    height: 100%;
+    position: relative;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    color: #414141;
+    padding: 1rem;
+    margin: 0;
+}
+
+.events-section-container .event-container:hover .event-text-container {
+    opacity: 0.79;
+}
+
+.events-section-container .event-container .event-text-container p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 14;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.events-section-container .event-container .date-box {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    background-color: rgba(207, 181, 59, 0.95);
+    right: 2rem;
+    top: -1rem;
+    border-radius: 3%;
+    z-index: 10;
+}
+
+.events-section-container .event-container:hover .date-box {
+    opacity: 1;
+}
+
+.events-section-container .event-container .date-box .date-content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align-last: center;
+    padding-top: 0.5rem;
+}
+
+.events-section-container .event-container .date-box .date-content h4 {
+    margin: 0;
+}
+
+.events-section .button-container {
+    height: 5rem;   
+    width: 3rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -3rem;
+}
+
+.events-section .button-container.left {
+    left: -3rem;
+}
+
+.events-section .button-container.hidden {
+    display: none;
+}
+
+/* .events-section .button-container .button .arrow-button {
+    border: solid lightgray;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.events-section .button-container .button .arrow-button:hover {
+    border: solid gray;
+    border-width: 0 4px 4px 0;
+} */
